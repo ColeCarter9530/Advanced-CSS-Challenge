@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Unit Two Challenge</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  </head>
-  <body>
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
-    <header>
-      <h1>Lernatino</h1>
-      <p>
-        Here is my portfolio!
-      </p>
+<body>
+
+    <header id="header">
+        <h1>Lernatino</h1>
+
+        <div>
+            <a href="#about">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#resume">Resume</a>
+        </div>
     </header>
 
-    <nav>
-      <a href="#">About Me</a>
-      <a href="#">Work</a>
-      <a href="#">Contact Me</a>
-      <a href="#">Resume</a>
-    </nav>
+    <div id="container">
 
-    <main>
-      <sidebar>
-        <p>
+        <div class="col1">
             About Me
-        </p>
+        </div>
 
-        <p>
+        <div class="col2 about">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quam nam magni provident ipsa impedit maiores enim, vel veniam corporis perspiciatis veritatis quaerat exercitationem ullam nostrum aperiam aliquid sapiente. Id laudantium debitis illo, facilis sequi ratione excepturi, corrupti modi nam eligendi officiis incidunt atque voluptatum saepe, architecto quaerat totam facere.</p>
+        </div>
+
+        <div class="col1">
             Work
-        </p>
-      </sidebar>
-      <div class="products">
-        <section class="card">
-          <header>Surf Report</header>
-          <img src="./assets/images/camera.jpg" alt="black camera" />
-          <p>Price: $300</p>
-        </section>
-        <section class="card">
-          <header>LED Wall</header>
-          <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
-          <p>Price: $150</p>
-        </section>
-        <section class="card">
-          <header>Calculator</header>
-          <img
-            src="./assets/images/toilet-paper.jpg"
-            alt="rolls of toilet paper in a basket"
-          />
-          <p>Price: $30</p>
-        </section>
-        <section class="card">
-          <header>Pastel Puzzles</header>
-          <img
-            src="./assets/images/wooden-spoons.jpg"
-            alt="4 wooden spoons with different seasonings"
-          />
-          <p>Price: $10</p>
-        </section>
-      </div>
-    </main>
+        </div>
 
-    <!-- Footer -->
-    <footer>
-      <h3>
-        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-        window!
-      </h3>
-    </footer>
-  </body>
+        <div class="col2 work">
+            <section id="surfReport">
+                <img src="./assets/images/crashing_wave.jpg" alt="wave" id="crashingWave" />
+                <div>
+                    <h2>Surf Report</h2>
+                    <p>Surf Report</p>
+                    <p>MERN Stack</p>
+                </div>
+            </section>
+
+            <section class="smallWork">
+                <img src="./assets/images/LED_Wall.jpg" alt="Led Wall" />
+                <div>
+                    <h2>LED Wall</h2>
+                    <p>LED Wall</p>
+                    <p>Node/IoT</p>
+                </div>
+            </section>
+
+            <section class="smallWork">
+                <img src="./assets/images/calculator.jpg" alt="computer screen" />
+                <div>
+                    <h2>Calculator</h2>
+                    <p>Calculator</p>
+                    <p>React/JavaScript</p>
+                </div>
+            </section>
+
+            <section class="smallWork">
+                <img src="./assets/images/pastel_puzzle.jpg" alt="pastel puzzle" />
+                <div>
+                    <h2>Pastel Puzzles</h2>
+                    <p>Pastel Puzzles</p>
+                    <p>MERN Stack</p>
+                </div>
+            </section>
+
+            <section class="smallWork">
+                <img src="./assets/images/run_buddy.jpg" alt="run buddy" />
+                <div>
+                    <h2>Run Buddy</h2>
+                    <p>Run Buddy</p>
+                    <p>HTML/CSS</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="col1">
+            Contact Me
+        </div>
+
+
+        <div class="col2">
+            <h3>
+                Contact Me
+                <p>(803)-777-7777</p>
+                <a href="www.examplewebsite.com">examplewebsite.com</a>
+                <a href="https://github.com/ColeCarter9530">GitHub</a>
+            </h3>
+        </div>
+    </div>
+</body>
+
 </html>
